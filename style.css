@@ -1,0 +1,121 @@
+/* --- Global Styles & Layout (External CSS) --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Colorful Gradient Background: Pink, Blue, Purple combination */
+    background: linear-gradient(135deg, #FFC0CB 0%, #ADD8E6 50%, #8A2BE2 100%);
+    background-attachment: fixed; 
+}
+
+
+/* Base sections for clean layout */
+section, header, footer {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.95); 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* --- 4. Apply CSS Styling: Text Decoration on Headings and Links --- */
+h2 {
+    color: #555;
+    text-decoration: underline; 
+}
+
+/* --- 2. Navigation Bar Styling --- */
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: space-around;
+    background-color: #333; 
+}
+
+nav li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none; 
+    text-decoration: underline; 
+    color: #ADD8E6;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* --- 4. Apply CSS Styling: Interactive Link States (Required Combination) --- */
+
+/* 1. :hover (Pink) */
+nav li a:hover {
+    background-color: #FFC0CB; 
+    color: #333; 
+    text-decoration: overline; 
+}
+
+/* 2. :visited (Purple) */
+nav li a:visited {
+    color: #8A2BE2; 
+    text-decoration: underline; 
+}
+
+/* 3. :active (Vibrant Blue) */
+nav li a:active {
+    background-color: #4169E1; 
+    color: white;
+    text-decoration: none; 
+}
+
+/* --- 3. Insert Media: Video Styling --- */
+video {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #4169E1; 
+    border-radius: 4px;
+}
+
+/* --- 5. Interactive Elements: Simple Form Styling --- */
+.styled-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #5a9ab8 
+
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4169E1; 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* --- Responsive Design (Media Query) --- */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; 
+    }
+    nav li a {
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+}
